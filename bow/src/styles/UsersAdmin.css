@@ -1,0 +1,97 @@
+.users-admin {
+  padding: 24px;
+  text-align: left;
+}
+
+.users-admin__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.users-admin__subtitle {
+  color: #565660;
+  margin-top: 6px;
+}
+
+.users-admin__form {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(180px, 1fr) auto;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.users-admin__input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #fff;
+  color: var(--color-text);
+}
+
+.users-admin__input--small {
+  width: 180px;
+}
+
+.users-admin__button {
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #fff;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: all 160ms ease;
+}
+
+.users-admin__button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+.users-admin__button--primary {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.users-admin__button--success {
+  background: rgba(167, 252, 0, 0.22);
+  border-color: var(--corp-lime);
+  color: #263d00;
+}
+
+.users-admin__button--danger {
+  background: rgba(255, 52, 149, 0.12);
+  border-color: var(--corp-pink);
+  color: #9f1559;
+}
+
+.users-admin__table-wrap {
+  overflow-x: auto;
+}
+
+.users-admin__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-admin__table th,
+.users-admin__table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.users-admin__table th {
+  text-align: left;
+  color: var(--corp-black);
+}
+
+.users-admin__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}

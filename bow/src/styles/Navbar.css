@@ -1,0 +1,78 @@
+.navbar {
+  width: 220px;
+  background: var(--corp-white);
+  padding: 28px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  box-shadow: 4px 0 16px rgba(0, 0, 0, 0.08);
+  border-right: 1px solid var(--border);
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--corp-black);
+}
+
+.navbar__icon {
+  font-size: 32px;
+}
+
+.navbar__title {
+  background: linear-gradient(135deg, var(--corp-pink), var(--corp-purple));
+  -webkit-background-clip: text;
+  background-clip: text;           /* добавлено для совместимости */
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+/* Удалён пустой .navbar__item */
+
+.navbar__link {
+  display: block;
+  padding: 14px 18px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--corp-black);
+  transition: 0.2s;
+  background: transparent;
+}
+
+.navbar__link:hover {
+  background: var(--accent-bg);
+}
+
+.navbar__link--active {
+  background: var(--corp-pink);
+  color: var(--corp-white);
+  box-shadow: 0 4px 12px rgba(255, 52, 149, 0.25);
+}
+
+.navbar__logout {
+  margin-top: auto;
+  padding: 14px 18px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--corp-black);
+  background: var(--corp-gray);
+  transition: 0.2s;
+  text-align: left;
+}
+
+.navbar__logout:hover {
+  background: var(--corp-black);
+  color: var(--corp-white);
+}

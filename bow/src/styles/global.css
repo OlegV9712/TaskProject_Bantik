@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --corp-black: #000000;
+  --corp-white: #ffffff;
+  --corp-pink: #ff3495;
+  --corp-lime: #a7fc00;
+  --corp-blue: #0000ff;
+  --corp-electric-blue: #00bfff;
+  --corp-turquoise: #32d8d3;
+  --corp-purple: #9100e6;
+  --corp-gray: #e9eaef;
+
+  --color-bg: var(--corp-gray);
+  --color-primary: var(--corp-pink);
+  --color-secondary: var(--corp-purple);
+  --color-accent: var(--corp-pink);
+  --color-text: #24242a;
+  --color-shadow: rgba(0, 0, 0, 0.12);
+  --font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --border-radius: 18px;
+
+  --text: var(--color-text);
+  --text-h: var(--corp-black);
+  --bg: var(--corp-white);
+  --border: #d3d5dd;
+  --code-bg: var(--corp-gray);
+  --accent: var(--corp-pink);
+  --accent-bg: rgba(255, 52, 149, 0.1);
+  --accent-border: rgba(255, 52, 149, 0.45);
+  --social-bg: rgba(233, 234, 239, 0.7);
+  --shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+
+  color-scheme: light;
+  font: 16px/1.5 var(--font-family);
+  color: var(--text);
+  background: var(--color-bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--color-bg);
+  color: var(--text);
+}
+
+a {
+  color: var(--corp-blue);
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-h);
+}
