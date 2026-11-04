@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useAuth } from '../auth/AuthContext';
+import Icon from '../common/Icon';
 import { apiFetch, jsonBody } from '../../api';
 import '../../styles/SettingsPage.css';
 
@@ -214,7 +215,7 @@ function SettingsPage() {
 
   return (
     <div className="settings">
-      <h1 className="settings__title">⚙️ Настройки</h1>
+      <h1 className="settings__title"><Icon name="settings" size={25} />Настройки</h1>
       <form className="settings__form" onSubmit={handleSave}>
         <div className="settings__section">
           <h2 className="settings__subtitle">Профиль</h2>
@@ -226,7 +227,7 @@ function SettingsPage() {
         <div className="settings__section">
           <h2 className="settings__subtitle">Внешний вид</h2>
           <label className="settings__label">Тема</label>
-          <button type="button" className="settings__themebtn" onClick={handleThemeClick}>🌸 Розовая</button>
+          <button type="button" className="settings__themebtn" onClick={handleThemeClick}>Розовая тема</button>
         </div>
         <div className="settings__section">
           <h2 className="settings__subtitle">Роль</h2>

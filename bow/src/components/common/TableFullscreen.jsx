@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import '../../styles/TableFullscreen.css';
 
-export default function TableFullscreen({ children, label = 'таблицу' }) {
+export default function TableFullscreen({ children, fullscreenContent, label = 'таблицу' }) {
   const [isFullscreen, setIsFullscreen] = useState(false);
 
   useEffect(() => {
@@ -25,7 +25,9 @@ export default function TableFullscreen({ children, label = 'таблицу' }) 
           {isFullscreen ? 'Свернуть таблицу' : 'На весь экран'}
         </button>
       </div>
-      <div className="table-fullscreen__content">{children}</div>
+      <div className="table-fullscreen__content">
+        {isFullscreen && fullscreenContent ? fullscreenContent : children}
+      </div>
     </section>
   );
 }

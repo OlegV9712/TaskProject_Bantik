@@ -1,21 +1,32 @@
 .settings__title {
-  font-size: 32px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
   margin-bottom: 28px;
+  color: #24212a;
+  font-size: clamp(26px, 2.5vw, 34px);
+  font-weight: 720;
+  letter-spacing: -0.045em;
+}
+
+.settings__title svg {
+  color: #a41b62;
 }
 
 .settings__section {
   background: white;
   padding: 24px 28px;
-  border-radius: var(--border-radius);
+  border-radius: 13px;
   margin-bottom: 24px;
-  border: 2px solid var(--accent-border);
+  border: 1px solid #e6e3e9;
   box-shadow: var(--shadow);
 }
 
 .settings__subtitle {
-  font-size: 22px;
+  font-size: 16px;
   margin-bottom: 14px;
-  color: var(--corp-black);
+  color: #302c35;
+  letter-spacing: -0.02em;
 }
 
 .settings__text {
@@ -36,12 +47,13 @@
   color:var(--text)
 }
 .settings__themebtn {
-  background:linear-gradient(90deg,var(--corp-pink),var(--corp-purple));
+  background:#a41b62;
   color:var(--corp-white);
   border:none;
-  padding:8px 12px;
-  border-radius:8px;
+  padding:9px 13px;
+  border-radius:9px;
   cursor:pointer;
+  font-size:12px;
   font-weight:700
 }
 
